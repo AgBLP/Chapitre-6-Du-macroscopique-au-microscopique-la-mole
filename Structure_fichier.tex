@@ -1,0 +1,112 @@
+%%%% french character
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+%%%% useful packages
+\usepackage[a4paper, left=1.3cm, right=1.3cm, top=2.2cm, bottom=2.3cm]{geometry}
+\usepackage{subcaption} % for figure caption
+\usepackage{graphicx} % image
+\usepackage{tabularx} % table
+\usepackage{lastpage} %pour la définition de la dernière page
+\usepackage[table]{xcolor} % color in table
+\usepackage{amsmath} % math
+\usepackage{amssymb} % bold math
+\usepackage{wasysym} % integral
+\usepackage[many]{tcolorbox} % colored box
+\usepackage{awesomebox} % pour des box déjà définies
+\usepackage{fancyhdr} % headers
+\usepackage{enumitem} % for bullet in itemize
+\usepackage[colorlinks=true,linkcolor=black,citecolor=black,filecolor=black,urlcolor=black]{hyperref} % for link
+\usepackage[backend=biber,style=alphabetic,sorting=ynt]{biblatex}
+\usepackage{accents} % for complex notation
+\usepackage[european, straightvoltages, RPvoltages]{circuitikz} % for electronic circuit
+
+\usepackage{hyperref}   %pour les liens url et les références
+\hypersetup{
+    colorlinks=true,
+    urlcolor=blue,
+    linkcolor=blue,
+    breaklinks=true
+}
+\usepackage{empheq}
+\usepackage{multicol} % to use several columns
+%\setlength{\columnseprule}{1pt} %Separator ruler width
+\usepackage{cellspace}  % espace du texte dans les colonnes tableaux
+\usepackage{colortbl}  %pour colorier les cases de tableaux
+\tcbuselibrary{skins} %library de 
+\usepackage{shadow}
+\usepackage{pifont}
+
+\usepackage{fontawesome5}
+
+%\usepackage{fontawesome} % awesome icons
+\usepackage{ifthen} % for loop and boolean in commands
+\usepackage{qrcode}
+\usepackage{pdfpages} % to include pdf
+\usepackage{wrapfig} % to wrap text around figures
+\usepackage{chemfig} % to draw chemistry formula
+\usepackage{chemist} % surtout pour chemform
+\usepackage{multirow} % for vertically merged cells
+\usepackage{makecell} % to format cell in tables
+\usepackage{physics} % for derivatives, braket, etc.
+\usepackage{esvect} % for large vectors
+\usepackage{listings} % for code
+\usepackage{dashundergaps} % for automatic text to fill
+% dyslexia friendly font (need to be compiled in xetex)
+%\usepackage{fontspec}
+%\setmainfont{OpenDyslexic}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage[framemethod=tikz]{mdframed} %pour les boîtes
+\usepackage{dashundergaps} %pour les textes à trous
+
+%%%% settings
+\setlength{\parskip}{0cm}
+\setlength{\parindent}{0cm}
+\renewcommand{\baselinestretch}{1.3}
+\setcounter{tocdepth}{2}
+\renewcommand{\thesection}{\textcolor{red}{\Roman{section}}}
+\renewcommand{\thesubsection}{\textcolor{red}{\Roman{section}.\arabic{subsection}}}
+
+%%%% tikz configuration
+\usetikzlibrary{babel}
+\tikzset{>=latex}
+\usetikzlibrary{shadows}
+\usetikzlibrary{backgrounds}
+
+
+
+%%%% header
+\renewcommand{\headrulewidth}{0.4pt}
+\setlength{\headheight}{22.50113pt}
+
+
+%%%% Table
+\renewcommand{\tabularxcolumn}[1]{m{#1}}
+\setlength{\extrarowheight}{8pt}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1\linewidth}}% colonne de type p mais centrée
+\cellspacetoplimit 2pt %espace au dessus du texte
+\cellspacebottomlimit 2pt  %espace en dessous du texte
+
+
+
+%%%% Chemfig configuration
+\setchemfig{
+  atom sep=20pt,
+  bond style={line width=1pt},
+  angle increment=30
+}
+
+
+%%%% dashundergaps configuration
+\dashundergapssetup{
+  gap-numbers = false,
+  gap-format = dot,
+  gap-widen,
+  gap-extend-percent
+}
+
+
+%\bibliographystyle{plain}
+\bibliography{TSNR/TSNR.bib}
