@@ -1,4 +1,4 @@
-%\modeCorrection
+\modeCorrection
 
 \renewcommand{\thesubsection}{\textcolor{red}{\Roman{section}.\arabic{subsection}}}
 \renewcommand{\thesubsubsection}{\textcolor{red}{\Roman{section}.\arabic{subsection}.\alph{subsubsection}}}
@@ -30,7 +30,8 @@
         \includegraphics[scale=0.3]{Images/Qrcode_IBM.png}
     \end{center}
 \end{minipage}
-\problematique{Peut-on dénombrer le nombre d'entités chimiques dans une espèce chimique ?}
+\vspace{1cm}
+\problematique{Peut-on dénombrer le nombre d'entités chimiques présentes dans une espèce chimique ?}
 \end{tcolorbox}
 
 \begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Objectifs :]
@@ -137,7 +138,7 @@
 \end{center}}{0}
 
 \question{\`{A} l'aide du document 2 et 5, déterminer le nombre d'atomes de carbone, d'oxygène et d'hydrogène dans l'acide oléique. \newline\texteTrouMultiLignes{~}{3}}{Les indices correspondent aux nombre d'atomes présents dans la molécule : il y a donc 6 atomes de carbone, 34 atomes d'hydrogène et 2 atomes d'oxygène.}{0}
-%\\
+\\
 \question{En vous aidant des règles du document 3, calculer la masse d'une seule entité pour chacune des espèces chimiques du basilic. \newline\texteTrouMultiLignes{~}{15}}{
 \begin{itemize}
     \item Pour l'eau \chemform{H_2O} : $m(\text{\chemform{H_2O}})=m(O)+2\times m(H) = 1\times 2,66\times10^{-26} + 2\times 1,67\times10^{-27} = 2,99\times10^{-26}$~kg ;
@@ -159,7 +160,16 @@
 
 
 \begin{difficile}{Bilan de l'activité}
-\vspace{18cm}
-%Il existe une énorme quantité d'entités chimiques dans la matière à notre échelle ! Il est impossible de donner du sens à ces nombres pour le cerveau humain. D'autre part, le calcul est laborieux et relativement compliquer à réaliser.\\
-%Plutôt que de travailler avec les entités chimiques, le chimiste va plutôt les rassembler en \og paquets \fg~ d'un très grand nombre de particules. Un paquet est appelé \og \textcolor{red}{mole} \fg.
+%\vspace{18cm}
+Il existe une énorme quantité d'entités chimiques dans la matière à notre échelle ! Il est impossible de donner du sens à ces nombres pour le cerveau humain. D'autre part, le calcul est laborieux et relativement compliquer à réaliser.\\
+Plutôt que de travailler avec les entités chimiques, le chimiste va plutôt les rassembler en \og paquets \fg~ d'un très grand nombre de particules. Un paquet est appelé \og \textcolor{red}{mole} \fg.\\
+Soit N le nombre d'entités chimiques présentes et n le nombre de mole de cette entité présente dans une espèce chimique. Alors :
+\begin{empheq}[box=\fbox]{equation*}
+    \mathrm{N} = n\times\mathrm{N_A}
+\end{empheq}
+où :
+\begin{empheq}[box=\fbox]{equation*}
+    \mathrm{N_A} = 6,022\times10^{23}\text{mol$^{-1}$}
+\end{empheq}
+est appelé \textcolor{red}{constante d'Avogadro}. Cette constante représente le nombre d'entités chimiques par mole d'entité. Cette constante fait donc le lien entre l'échelle microscopique (l'entité) et l'échelle macroscopique (l'espèce chimique = collection d'un grand nombre d'entité).
 \end{difficile}
